@@ -1,0 +1,37 @@
+{
+  "name": "bragg-env",
+  "version": "0.0.0",
+  "description": "Environment middleware for bragg",
+  "license": "MIT",
+  "repository": "SamVerschueren/bragg-env",
+  "author": {
+    "name": "Sam Verschueren",
+    "email": "sam.verschueren@gmail.com",
+    "url": "github.com/SamVerschueren"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "bragg",
+    "aws",
+    "lambda",
+    "environment",
+    "env",
+    "amazon"
+  ],
+  "dependencies": {
+    "aws-lambda-env": "^3.0.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "aws-lambda-mock-context": "^1.1.0",
+    "xo": "*"
+  }
+}
