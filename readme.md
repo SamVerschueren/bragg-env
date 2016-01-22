@@ -19,7 +19,19 @@ var environment = require('bragg-env');
 app.use(environment());
 app.use(function (ctx) {
     console.log(ctx.env);
-    //=> 'staging' 
+    //=> 'staging'
+});
+```
+
+You can use the `NODE_ENV` environment variable to overwrite the context environment.
+
+```js
+process.env.NODE_ENV = 'test';
+
+app.use(environment());
+app.use(function (ctx) {
+    console.log(ctx.env);
+    //=> 'test'
 });
 ```
 
@@ -32,7 +44,7 @@ Exposes the environment in the `env` property of the `context` object.
 
 #### options
 
-Type: `Object`  
+Type: `Object`
 Default: `{$LATEST: 'staging', default: 'production'}`
 
 An [aws-lamba-env](https://github.com/samverschueren/aws-lambda-env#options) options object.

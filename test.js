@@ -23,3 +23,13 @@ test('options', t => {
 	t.is(helper(v1, {1: 'v1'}).env, 'v1');
 	t.is(helper(dev, {dev: 'development'}).env, 'development');
 });
+
+test.serial('environment', t => {
+	process.env.NODE_ENV = 'test';
+
+	t.is(helper(latest).env, 'test');
+	t.is(helper(v1, {1: 'v1'}).env, 'test');
+	t.is(helper(dev, {dev: 'development'}).env, 'test');
+
+	delete process.env.NODE_ENV;
+});
