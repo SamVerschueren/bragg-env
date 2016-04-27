@@ -1,6 +1,6 @@
 {
   "name": "bragg-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Environment middleware for bragg",
   "license": "MIT",
   "repository": "SamVerschueren/bragg-env",
