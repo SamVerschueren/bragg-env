@@ -27,7 +27,7 @@
     "amazon"
   ],
   "dependencies": {
-    "aws-lambda-env": "^3.0.0"
+    "aws-lambda-env": "^4.0.0"
   },
   "devDependencies": {
     "ava": "*",

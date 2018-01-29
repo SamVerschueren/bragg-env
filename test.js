@@ -13,7 +13,7 @@ function helper(ctxOpts, opts) {
 }
 
 test('defaults', t => {
-	t.is(helper(latest).env, 'staging');
+	t.is(helper(latest).env, 'development');
 	t.is(helper(v1).env, 'production');
 	t.is(helper(dev).env, 'production');
 });

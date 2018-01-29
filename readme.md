@@ -45,7 +45,7 @@ Exposes the environment in the `env` property of the `context` object.
 #### options
 
 Type: `object`<br>
-Default: `{$LATEST: 'staging', default: 'production'}`
+Default: `{$LATEST: 'development', default: 'production'}`
 
 An [aws-lamba-env](https://github.com/samverschueren/aws-lambda-env#options) options object.
 
